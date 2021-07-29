@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.container1 {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  /*display: flex;*/
+}
+
+#nav {
+  /*display: flex;*/
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0 15.5px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+a:hover {
+  border-color: blueviolet;
+}
+.btn {
+  /*display: flex;*/
+  cursor: zoom-in;
+}
+
+.blocks {
+  /*display: flex;*/
+}
+.blocks > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
