@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
 @font-face {
-	font-family: 'Gilroy-Regular';
-	src: url('fonts/Gilroy-Regular.eot');
-	src: local('☺'), url('fonts/Gilroy-Regular.woff') format('woff'), url('fonts/Gilroy-Regular.ttf') format('truetype'), url('fonts/Gilroy-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Gilroy-Regular';
+  src: url('fonts/Gilroy-Regular.eot');
+  src: local('☺'), url('fonts/Gilroy-Regular.woff') format('woff'), url('fonts/Gilroy-Regular.ttf') format('truetype'), url('fonts/Gilroy-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gilroy-Bold';
-	src: url('..fonts2/Gilroy-Bold.eot');
-	src: local('☺'), url('fonts/Gilroy-Bold.woff') format('woff'), url('fonts/Gilroy-Bold.ttf') format('truetype'), url('fonts/Gilroy-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Gilroy-Bold';
+  src: url('..fonts2/Gilroy-Bold.eot');
+  src: local('☺'), url('fonts/Gilroy-Bold.woff') format('woff'), url('fonts/Gilroy-Bold.ttf') format('truetype'), url('fonts/Gilroy-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -34,7 +34,9 @@ button {
   font-size: 18px;
 }
 
-p, button, a {
+p,
+button,
+a {
   font-family: 'Gilroy-Regular';
 }
 
@@ -59,7 +61,7 @@ p, button, a {
 }
 
 #logo1 {
- /* position: absolute;
+  /* position: absolute;
   z-index: 1;*/
   width: 41px;
   margin-left: 80px;
@@ -86,12 +88,15 @@ p, button, a {
   border: 2px solid transparent;
   border-radius: 20px;
 }
+
 .menu:hover {
   border-color: blueviolet;
 }
+
 button {
   border-radius: 5px;
 }
+
 .container2 {
   display: flex;
   flex-wrap: wrap;
@@ -122,7 +127,7 @@ button {
   width: 200px;
   height: 60px;
   /*border-color: #f7941e;*/
-  /*border: none;
+/*border: none;
   background-color: #f7941e;
   color: #ffffff;
 }*/
@@ -162,6 +167,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .inner-tb2 {
   vertical-align: middle;
   padding: 113px 162px 113px 135px;
@@ -196,6 +202,7 @@ button {
   font-size: 32px;
   line-height: 140.62%;
 }
+
 .how-expl {
   font-family: Gilroy;
   font-size: 20px;
@@ -225,11 +232,11 @@ button {
   flex-wrap: wrap;
 }
 
-.suggestions > div {
+.suggestions>div {
   background-color: #fafafa;
 }
 
-.suggestions > div:hover {
+.suggestions>div:hover {
   background-color: #ffffff;
   box-shadow: 9px 9px 10px 2px rgba(34, 60, 80, 0.2);
 }
@@ -254,9 +261,10 @@ button {
   align-items: center;
 }
 
-.container4-text{
+.container4-text {
   font-size: 32px;
 }
+
 .container4-text h4 {
   margin-bottom: 10px;
 }
@@ -295,7 +303,8 @@ button {
 }
 
 .JohnDoe div {
-  margin: auto auto auto 78px; /*64px*/
+  margin: auto auto auto 78px;
+  /*64px*/
   color: #ffffff;
 }
 
@@ -316,23 +325,26 @@ button {
 .cards {
   margin: 0 135px 80px 135px;
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
-.cards a{
+.cards a {
   box-shadow: box-shadow: 5px 10px #888888;
 }
 
 .cards div {
   width: 570px;
   height: 290px;
-  /*padding: 48px;
-  position: relative; */
+  padding: 48px;
+}
+
+.cards div:first-child {
+  margin-right: 30px;
 }
 
 a {
-  display: inline-block; /*?*/
-  
+  display: inline-block;
+  /*???*/
 }
 
 .cards div:hover {
@@ -349,8 +361,6 @@ a {
 
 .cards p:last-of-type {
   font-size: 14px;
- /* position: absolute;
-  bottom: 0;*/
 }
 
 #nav2 {
@@ -383,6 +393,7 @@ hr {
   height: 2px;
   color: #000000;
   background-color: #000000;
+  margin-bottom: 30px;
 }
 
 .sosial {
