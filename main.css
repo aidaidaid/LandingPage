@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('fonts/Gilroy-Regular.eot');
+	src: local('☺'), url('fonts/Gilroy-Regular.woff') format('woff'), url('fonts/Gilroy-Regular.ttf') format('truetype'), url('fonts/Gilroy-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('..fonts2/Gilroy-Bold.eot');
+	src: local('☺'), url('fonts/Gilroy-Bold.woff') format('woff'), url('fonts/Gilroy-Bold.ttf') format('truetype'), url('fonts/Gilroy-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
   margin: 0;
+  background-color: #ffffff;
 }
 
 a {
@@ -13,34 +30,55 @@ a:visited {
   color: #000000;
 }
 
-.container1 {
-  width: 100%;
-  margin: 0;
-  background-color: #ffffff;
+button {
+  font-size: 18px;
 }
 
-.inner {
+p, button, a {
+  font-family: 'Gilroy-Regular';
+}
+
+.find-a-gift,
+.container4-text h4,
+.cards h4,
+#nav2 a {
+  font-family: 'Gilroy-Bold';
+}
+
+.container1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
 }
-#logo,
-#nav,
-.btn,
-.blocks {
-  /*display: flex;*/
+
+#nav1 {
+  text-align: center;
+
 }
+
 #logo1 {
+ /* position: absolute;
+  z-index: 1;*/
+  width: 41px;
   margin-left: 80px;
+  margin-right: 79px;
   color: #231F20;
   font-size: 18px;
   font-family: 'Homemade Apple', cursive;
 }
 
 .btn-finder {
+  width: 140px;
+  height: 40px;
   margin-right: 34px;
+  margin-left: 26px;
+  color: #f7941e;
+  border-color: #f7941e;
+  background-color: transparent;
 }
+
 .menu {
   font-size: 18px;
   text-decoration: none;
@@ -54,7 +92,7 @@ a:visited {
 button {
   border-radius: 5px;
 }
-.blocks {
+.container2 {
   display: flex;
   flex-wrap: wrap;
   background-color: #f1f1f2;
@@ -71,36 +109,43 @@ button {
 }*/
 
 .btn-more,
-.btn-finder {
+.btn-find-gift {
   width: 200px;
   height: 60px;
   color: #f7941e;
   border-color: #f7941e;
-}
-
-.btn-find-gift {
-  width: 200px;
-  height: 60px;
-  /*border-color: #f7941e;*/
-  border: none;
-  background-color: #f7941e;
-  color: #ffffff;
-}
-
-.btn-more,
-.btn-find-gift {
+  background-color: transparent;
   margin-bottom: 0;
 }
 
-.black {
-  background-color: #000000;
-  height: 48px;
+/*.btn-find-gift {
+  width: 200px;
+  height: 60px;
+  /*border-color: #f7941e;*/
+  /*border: none;
+  background-color: #f7941e;
+  color: #ffffff;
+}*/
+
+.btn-more:hover,
+.btn-find-gift:hover,
+.btn-finder:hover {
+  color: #ffffff;
+  background-color: #f7941e;
 }
 
+.btn-find-gift-2,
 .btn-how-it-works {
   width: 200px;
   height: 48px;
   background-color: transparent;
+}
+
+.btn-find-gift-2:hover,
+.btn-how-it-works:hover {
+  background-color: #000000;
+  color: #fff;
+  height: 48px;
 }
 
 .textbox {
@@ -127,12 +172,12 @@ button {
 
 .find-a-gift {
   text-align: left;
-
   margin-top: 0;
   font-family: Gilroy;
   font-size: 56px;
   line-height: 69px;
   color: #000000;
+  font-family: 'Gilroy-Bold';
 }
 
 .question {
@@ -143,6 +188,7 @@ button {
   font-size: 20px;
   line-height: 140.62%;
   color: #000000;
+  font-family: 'Gilroy-Regular';
 }
 
 .how {
@@ -163,11 +209,20 @@ button {
   text-align: center;
 }
 
+.container3-text p:first-child {
+  font-size: 32px;
+}
+
+.container3-text p:last-child {
+  font-size: 18px;
+}
+
 .suggestions {
   margin: 0 135px;
   padding-bottom: 137px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .suggestions > div {
@@ -186,7 +241,7 @@ button {
   text-decoration: none;
 }
 
-h1 {
+.suggestions p {
   font-size: 20px;
   margin-left: 24px;
 }
@@ -199,6 +254,21 @@ h1 {
   align-items: center;
 }
 
+.container4-text{
+  font-size: 32px;
+}
+.container4-text h4 {
+  margin-bottom: 10px;
+}
+
+.container4-text p {
+  margin-top: 10px
+}
+
+.container4-btns {
+  font-size: ;
+}
+
 .best-blog {
   height: 166px;
   display: flex;
@@ -209,10 +279,11 @@ h1 {
   margin: auto auto 0 auto;
 }
 
-.best-blog h {
+.best-blog p:first-child {
   font-size: 32px;
 }
-.best-blog p {
+
+.best-blog p:last-child {
   font-size: 18px;
 }
 
@@ -222,21 +293,24 @@ h1 {
   margin: 78px 135px 40px 135px;
   background-color: #231f20;
 }
+
 .JohnDoe div {
   margin: auto auto auto 78px; /*64px*/
   color: #ffffff;
 }
 
-
 .JohnDoe p:first-of-type {
   font-size: 14px;
 }
+
 .JohnDoe p:last-of-type {
   font-size: 48px;
+  font-family: 'Conv_Gilroy-Regular';
 }
 
 .JohnDoe a {
   color: #ffffff;
+  font-size: 18px;
 }
 
 .cards {
@@ -279,16 +353,17 @@ a {
   bottom: 0;*/
 }
 
-#bottom-menu {
-  margin: 115px 20% 52px 20%;
-  
-}
 #nav2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: auto;
   text-align: center;
+  margin: 115px 20% 52px 20%;
+}
+
+#nav2 a {
+  font-size: 14px;
 }
 
 #nav2 p {
@@ -322,4 +397,5 @@ hr {
   text-align: center;
   margin-top: 72px;
   margin-bottom: 35px;
-} 
+  font-size: 14px;
+}
