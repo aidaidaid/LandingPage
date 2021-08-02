@@ -18,7 +18,14 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
+}
+
+main {
+  width: 1440px;
 }
 
 a {
@@ -32,6 +39,13 @@ a:visited {
 
 button {
   font-size: 18px;
+  border: none;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 p,
@@ -49,6 +63,8 @@ a {
 
 .container1 {
   width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,12 +73,9 @@ a {
 
 #nav1 {
   text-align: center;
-
 }
 
 #logo1 {
-  /* position: absolute;
-  z-index: 1;*/
   width: 41px;
   margin-left: 80px;
   margin-right: 79px;
@@ -90,11 +103,7 @@ a {
 }
 
 .menu:hover {
-  border-color: blueviolet;
-}
-
-button {
-  border-radius: 5px;
+  border-color: #000000;
 }
 
 .container2 {
@@ -107,12 +116,6 @@ button {
   width: 50%;
 }
 
-/*.blocks > div {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}*/
-
 .btn-more,
 .btn-find-gift {
   width: 200px;
@@ -122,15 +125,6 @@ button {
   background-color: transparent;
   margin-bottom: 0;
 }
-
-/*.btn-find-gift {
-  width: 200px;
-  height: 60px;
-  /*border-color: #f7941e;*/
-/*border: none;
-  background-color: #f7941e;
-  color: #ffffff;
-}*/
 
 .btn-more:hover,
 .btn-find-gift:hover,
@@ -151,35 +145,34 @@ button {
   background-color: #000000;
   color: #fff;
   height: 48px;
+  border: none;
 }
 
 .textbox {
   display: flex;
-  vertical-align: middle;
-  position: relative;
   justify-content: center;
 }
 
-.inner-tb1 {
+.inner-tb1,
+.inner-tb2 {
   vertical-align: middle;
-  padding: 154px 162px 154px 135px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
 }
 
+.inner-tb1, {
+  padding: 154px 162px 154px 135px;
+}
+
 .inner-tb2 {
-  vertical-align: middle;
   padding: 113px 162px 113px 135px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .find-a-gift {
   text-align: left;
   margin-top: 0;
-  font-family: Gilroy;
   font-size: 56px;
   line-height: 69px;
   color: #000000;
@@ -190,7 +183,6 @@ button {
   text-align: left;
   margin-top: 0;
   margin-bottom: 52px;
-  font-family: Gilroy;
   font-size: 20px;
   line-height: 140.62%;
   color: #000000;
@@ -198,13 +190,11 @@ button {
 }
 
 .how {
-  font-family: Gilroy;
   font-size: 32px;
   line-height: 140.62%;
 }
 
 .how-expl {
-  font-family: Gilroy;
   font-size: 20px;
   margin-bottom: 35px;
   line-height: 140.62%;
@@ -224,7 +214,7 @@ button {
   font-size: 18px;
 }
 
-.suggestions {
+.variants {
   margin: 0 135px;
   padding-bottom: 137px;
   display: flex;
@@ -232,28 +222,27 @@ button {
   flex-wrap: wrap;
 }
 
-.suggestions>div {
+.variants div {
   background-color: #fafafa;
 }
 
-.suggestions>div:hover {
+.variants div:hover {
   background-color: #ffffff;
   box-shadow: 9px 9px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
-.see-more {
-  display: inline-block;
+.variants p:first-of-type {
+  font-size: 20px;
+  padding-left: 24px;
+}
+
+.variants p:last-of-type{
   font-size: 14px;
-  margin: 74px 0 24px 24px;
+  padding: 74px 0 24px 24px;
   text-decoration: none;
 }
 
-.suggestions p {
-  font-size: 20px;
-  margin-left: 24px;
-}
-
-.orange {
+.container4 {
   background-color: #f7941e;
   height: 240px;
   display: flex;
@@ -273,13 +262,10 @@ button {
   margin-top: 10px
 }
 
-.container4-btns {
-  font-size: ;
-}
-
 .best-blog {
   height: 166px;
   display: flex;
+  margin-top: 57px;
 }
 
 .best-blog div {
@@ -304,7 +290,6 @@ button {
 
 .JohnDoe div {
   margin: auto auto auto 78px;
-  /*64px*/
   color: #ffffff;
 }
 
@@ -314,7 +299,7 @@ button {
 
 .JohnDoe p:last-of-type {
   font-size: 48px;
-  font-family: 'Conv_Gilroy-Regular';
+  font-family: 'Gilroy-Regular';
 }
 
 .JohnDoe a {
@@ -326,29 +311,36 @@ button {
   margin: 0 135px 80px 135px;
   display: flex;
   justify-content: space-between;
-}
-
-.cards a {
-  box-shadow: box-shadow: 5px 10px #888888;
+  flex-wrap: wrap;
 }
 
 .cards div {
   width: 570px;
   height: 290px;
-  padding: 48px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cards div *{
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .cards div:first-child {
   margin-right: 30px;
 }
 
-a {
+.cards a {
   display: inline-block;
-  /*???*/
+  width: 570px;
+  height: 290px;
 }
 
 .cards div:hover {
-  box-shadow: 16px 16px 16px 0px #a0a3a5;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
 .cards h4 {
@@ -374,6 +366,15 @@ a {
 
 #nav2 a {
   font-size: 14px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+#nav2 a:hover {
+  background-size: 100% 2px;
 }
 
 #nav2 p {
@@ -393,7 +394,7 @@ hr {
   height: 2px;
   color: #000000;
   background-color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 .sosial {
